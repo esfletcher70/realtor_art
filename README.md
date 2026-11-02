@@ -19,10 +19,15 @@ It's a plain static site (HTML, CSS, JavaScript) with no build step. Open `index
 
 1. **Name and email:** set `businessName`, `shortName`, `tagline` and `email` in `config.js`. The name also appears in `index.html` (title, meta tags) as a fallback; search and replace it there too.
 2. **Stripe checkout:** in the Stripe Dashboard, create a Payment Link for each package and paste the URLs into `paymentLinks` in `config.js`:
-   - `digital`: $69 digital file
-   - `framedLocal`: $229 framed, hand-delivered (collect the shipping address in the link)
-   - `framedShipped`: $269 framed + $40 shipping
-   - `collection`: $999 for 5
+   - `digital`: $79 digital file
+   - `framedLocal`: $249 framed, hand-delivered (collect the shipping address in the link)
+   - `framedShipped`: $289 framed + $40 shipping
+   - `collection`: $1,099 for 5
+   - `framedPremiumLocal`: $329 framed with the premium finish, hand-delivered
+   - `framedPremiumShipped`: $369 framed with the premium finish + $40 shipping
+   - `collectionPremium`: $1,499 for 5 with the premium finish
+
+   The premium finish (walnut frame, thicker 6-ply mat, delivery to the client's door) is an optional +$80 per portrait upgrade in the order form, set under `premiumUpgrade` in `config.js`.
    Turn on Stripe Tax for the framed products (California sales tax). Until a link is set, that button opens a pre-filled email instead.
 3. **Real portraits:** the gallery, hero and slider use code-drawn sample houses. Once you have real portraits, swap them in. The easiest way is to replace a `<div class="art" data-house=...>` with `<div class="art"><img src="portraits/rivera.jpg" alt="..."></div>`, and change the `samples` list in `main.js` the same way.
 4. **Photo rights:** only use photos you or the homeowner took, or listing photos with the photographer's OK (see the FAQ on the page).

@@ -18,6 +18,18 @@ window.SITE_CONFIG = {
     framedLocal: "",    // framed, hand-delivered in the Bay Area
     framedShipped: "",  // framed, shipped outside the delivery area (+ shipping)
     collection: "",     // 5 framed, hand-delivered
+    framedPremiumLocal: "",   // framed + premium finish, hand-delivered
+    framedPremiumShipped: "", // framed + premium finish, shipped (+ shipping)
+    collectionPremium: "",    // 5 framed + premium finish
+  },
+
+  // Optional upgrade offered in the order form (not a separate pricing card).
+  // Price is per portrait, so a 5-pack adds 5x this amount.
+  premiumUpgrade: {
+    price: 80,
+    name: "Premium finish",
+    detail: "Walnut frame, thicker 6-ply mat, and hand-delivery straight to your client's door",
+    appliesTo: ["framed", "collection"],
   },
 
   shippingFee: 40,
@@ -31,7 +43,7 @@ window.SITE_CONFIG = {
       id: "digital",
       tier: "Digital",
       name: "The Print File",
-      price: 69,
+      price: 79,
       unit: "per home",
       blurb: "A high-resolution watercolor file in 48 hours. Good for a closing that's tomorrow.",
       features: ["Print-ready file, sized up to 16×20", "Proof within 48 hours", "Print it anywhere, any size"],
@@ -42,7 +54,7 @@ window.SITE_CONFIG = {
       id: "framed",
       tier: "Framed keepsake",
       name: "The Threshold",
-      price: 229,
+      price: 249,
       unit: "per home",
       featured: true,
       badge: "Most popular",
@@ -55,10 +67,10 @@ window.SITE_CONFIG = {
       id: "collection",
       tier: "For your pipeline",
       name: "The Collection",
-      price: 999,
+      price: 1099,
       unit: "for 5 homes",
       blurb: "Five framed portraits saved for your next closings, so you always have a gift ready.",
-      features: ["Five framed keepsakes ($200 each)", "Priority 48-hour proofs", "Use them any time in 12 months"],
+      features: ["Five framed keepsakes ($220 each)", "Priority 48-hour proofs", "Use them any time in 12 months"],
       delivery: "local",
       cta: "Reserve a collection",
     },

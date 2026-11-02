@@ -151,6 +151,7 @@ p { margin: 0 0 1em; }
 .badge { position: absolute; top: -13px; left: 28px; background: var(--accent); color: #fff; font-size: .72rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; padding: 5px 11px; border-radius: 999px; }
 .plan-tier { font-size: .75rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); margin-bottom: .4em; }
 .plan h3 { font-family: var(--serif); font-size: 1.6rem; font-weight: 400; margin-bottom: .3em; }
+.plan .price { color: var(--ink); }
 .price { font-family: var(--serif); font-size: 2.6rem; line-height: 1; margin: .2em 0 .4em; }
 .price small { font-family: var(--sans); font-size: .9rem; color: var(--muted); }
 .plan p { color: var(--muted); }
@@ -180,6 +181,15 @@ p { margin: 0 0 1em; }
 .totals .total dt { color: var(--ink); font-weight: 600; }
 .totals .total dd { font-family: var(--serif); font-size: 1.4rem; font-weight: 400; }
 [hidden] { display: none !important; }
+
+.upgrade { margin: 4px 0 16px; }
+.upgrade-box { display: flex !important; gap: 12px; align-items: flex-start; text-transform: none !important; letter-spacing: 0 !important; font-size: .95rem !important; font-weight: 400 !important; border: 1.5px solid var(--line); border-radius: 10px; padding: 14px; cursor: pointer; background: #fff; }
+.upgrade-box:has(input:checked) { border-color: var(--ink); background: #fbf8f2; }
+.upgrade-box input { width: 18px; height: 18px; margin: 2px 0 0; accent-color: var(--ink); flex: none; }
+.upgrade-box strong { display: block; font-weight: 600; }
+.upgrade-detail { display: block; color: var(--muted); font-size: .86rem; margin-top: 2px; }
+.plan-upsell { font-size: .86rem; color: var(--muted); margin: -12px 0 20px; }
+.plan-upsell strong { color: var(--ink); }
 
 /* faq */
 details { border-bottom: 1px solid var(--line); padding: 4px 0; }

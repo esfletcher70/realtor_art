@@ -201,6 +201,7 @@
             <li>16×20 frame, 11×14 mat, archival paper</li>
             <li>Family name and year in the corner; your logo and card included</li>
             <li>Free hand-delivery in the Bay Area, or shipped for a flat fee</li>
+            <li>Optional premium finish: walnut frame, thicker mat, delivered to your client's door</li>
           </ul>
         </div>
         <form class="order-card" id="order-form" novalidate>
@@ -213,8 +214,19 @@
             <p class="hint" id="zip-hint">Bay Area addresses get free hand-delivery.</p>
           </div>
 
+          <div class="upgrade" id="upgrade-row">
+            <label class="upgrade-box" for="premium">
+              <input type="checkbox" id="premium" name="premium" />
+              <span>
+                <strong id="upgrade-title">Add premium finish</strong>
+                <span class="upgrade-detail" id="upgrade-detail"></span>
+              </span>
+            </label>
+          </div>
+
           <dl class="totals">
             <div><dt>Package</dt><dd id="t-base">$0</dd></div>
+            <div id="t-premium-row" hidden><dt>Premium finish</dt><dd id="t-premium">$0</dd></div>
             <div><dt>Delivery</dt><dd id="t-delivery">—</dd></div>
             <div class="total"><dt>Estimated total</dt><dd id="t-total">$0</dd></div>
           </dl>
